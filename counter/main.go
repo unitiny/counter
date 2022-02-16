@@ -35,7 +35,7 @@ func Flush2broker(t int, fn func()) {
 
 // FuncCbFlush 重置计数器
 func FuncCbFlush() {
-	fmt.Println("重置计数器...")
+	// fmt.Println("重置计数器...")
 	newCounter := make(map[string]int)
 	counter = newCounter
 }
@@ -56,7 +56,7 @@ func Incr(key string, val int) {
 
 // Read 读取计数器
 func Read() {
-	fmt.Println("当前计数器存储：")
+	// fmt.Println("当前计数器存储：")
 	for k,v:=range counter{
 		fmt.Println(k,":",v)
 	}
